@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color:rgb(60, 158, 175);
+            text-align:center;
+            color:cornsilk;
+            padding:20px
+            }
+
+        button{
+            background-color:rgb(60, 158, 175);
+            text-align: center;
+            color: cornsilk;
+            font-size: 20px;
+            border-radius: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: none;
+            margin-left: 8px;
+        }
+
+        .soma-produto h1{
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .lista-cadastro{
+            display: flex;
+            margin: 20px 0;
+            padding:0 20px;
+        }
+
+        .lista-cadastro input[type=text]{
+            flex: 1;
+            height: 30px;
+            text-align: center;
+            padding-left: 20px;
+        }
+
+        .lista-cadastro input[type=submit]{
+            background-color: rgb(60, 158, 175);
+            color: cornsilk;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 10px;
+            margin-left: 8px;
+            cursor: pointer;
+        }
+        
+
+        .lista-produtos-single{
+            padding: 10px 0;
+            border-bottom:1px solid #ccc;
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .lista-produtos-single h3{
+            flex: 1;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        h3.produto > span{
+            text-align: center;
+            background-color:rgb(60, 158, 175);
+            padding: 8px 20px;
+            border-radius: 20px;
+            color: white;
+        }
+
+        h3.preço > span{
+            text-align: center;
+            background-color:rgb(60, 175, 108);
+            padding: 8px 20px;
+            border-radius: 20px;
+            color: white;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+</head>
+
+<body>
+    <header><h2>
+        Lista de Compras
+    </h2></header>
+    <div class = "lista-cadastro">
+        <input type="text" placeholder="Nome do produto" name="nome_produto">
+        <input type="number" step="0.01" name="valor_produto">
+        <input type="submit" name="acao" value="Cadastrar">
+    </div>
+
+    <div class = "lista-produtos">
+    </div>
+
+    <div class="soma-produto">
+        <h1>Total: </h1>
+    </div>
+
+    <button name="limpar">Limpar</button>
+    <script src = "lista-super.js">
+
+    </script>
+</body>
+</html>
